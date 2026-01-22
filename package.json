@@ -1,0 +1,40 @@
+{
+  "name": "feedback-system-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Feedback System",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:migrate": "ts-node src/config/migrate.ts"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.0.0",
+    "@azure/msal-node": "^2.6.0",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "adaptivecards": "^3.0.3",
+    "bcrypt": "^5.1.1",
+    "botbuilder": "^4.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3",
+    "openai": "^4.20.0",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.10.6",
+    "@types/node-cron": "^3.0.11",
+    "@types/pg": "^8.16.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
