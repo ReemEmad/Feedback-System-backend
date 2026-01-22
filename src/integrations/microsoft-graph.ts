@@ -163,7 +163,7 @@ class MicrosoftGraphIntegration {
         }
 
         // Get shared files
-        const sharedFiles = await getSharedFiles(employeeId);
+        const sharedFiles = await this.getSharedFiles(employeeId);
         // Process shared files...
 
       } catch (error) {
